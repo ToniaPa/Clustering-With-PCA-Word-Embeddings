@@ -73,6 +73,7 @@ def transform_word2vec(data, mo=1):
     vectors = []
     for doc in sentences:
         # vector = np.mean([model.wv[word] for word in doc if word in model.wv], axis=0) # wv = word vector
+        # vectors.append(vector)
         #
         # ΛΥΣΗ για το ValueError: setting an array element with a sequence. The requested array has an
         #     # inhomogeneous shape after 1 dimensions. The detected shape was (18846,) + inhomogeneous
@@ -124,6 +125,7 @@ def transform_fasttext(data):
     vectors = []
     for doc in sentences:
         # vector = np.mean([model.wv[word] for word in doc if word in model.wv], axis=0)
+        # vectors.append(vector)
         #
         # ΛΥΣΗ για το ValueError: setting an array element with a sequence. The requested array has an
         #     # inhomogeneous shape after 1 dimensions. The detected shape was (18846,) + inhomogeneous
